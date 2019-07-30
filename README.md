@@ -6,7 +6,7 @@ Hack-like result or exception wrapper for PHP.
 
 [![Build Status](https://travis-ci.org/azjezz/roew.svg?branch=master)](https://travis-ci.org/azjezz/roew)
 [![SymfonyInsight](https://insight.symfony.com/projects/32f4eae2-04a5-4657-b172-86cdac6c104c/mini.svg)](https://insight.symfony.com/projects/32f4eae2-04a5-4657-b172-86cdac6c104c)
-[![Total Downloads](https://poser.pugx.org/azjezz/roew/d/total.svg)](https://packagist.org/packages/azjezz/sweet)
+[![Total Downloads](https://poser.pugx.org/azjezz/roew/d/total.svg)](https://packagist.org/packages/azjezz/roew)
 [![Latest Stable Version](https://poser.pugx.org/azjezz/roew/v/stable.svg)](https://github.com/azjezz/roew/releases)
 [![License](https://poser.pugx.org/azjezz/roew/license.svg)](https://github.com/azjezz/roew/blob/master/LICENSE)
 
