@@ -1,0 +1,35 @@
+<?php declare(strict_types=1);
+
+$header = <<<CODE
+    This file is part of the Roew package.
+
+    (c) Saif Eddin Gmati <azjezz@protonmail.com>
+
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+CODE;
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__.'/src')
+    ->exclude(__DIR__.'/tests')
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'ordered_imports' => ['sort_algorithm' => 'alpha'],
+        'no_trailing_whitespace' => true,
+        'header_comment' => [
+            'comment_type' => 'PHPDoc',
+            'header' => $header,
+            'location' => 'after_declare_strict',
+            'separate' => 'both'
+        ]
+    ])
+    ->setRiskyAllowed(true)
+    ->setUsingCache(true)
+    ->setHideProgress(false)
+    ->setFinder($finder)
+    ;

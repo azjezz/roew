@@ -1,0 +1,13 @@
+dist: xenial
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 7.2
+    - php: 7.3
+
+install:
+  - composer install --no-interaction --no-suggest
+
+script: composer check

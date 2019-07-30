@@ -1,0 +1,38 @@
+{
+    "name": "azjezz/roew",
+    "type": "library",
+    "description": "Hack-like ResultOrExceptionWrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saif Eddin Gmati (azjezz)",
+            "email": "azjezz@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "vimeo/psalm": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roew\\": "src/Roew/"
+        },
+        "files": [
+            "src/Roew/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Roew\\Test\\": "tests/Roew/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "phpunit",
+            "psalm"
+        ]
+    }
+}
