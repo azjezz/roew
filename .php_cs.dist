@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 
 $header = <<<CODE
-    This file is part of the Roew package.
+This file is part of the Roew package.
 
-    (c) Saif Eddin Gmati <azjezz@protonmail.com>
+(c) Saif Eddin Gmati <azjezz@protonmail.com>
 
-    For the full copyright and license information, please view the LICENSE
-    file that was distributed with this source code.
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
 CODE;
 
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__.'/src')
-    ->exclude(__DIR__.'/tests')
+    ->in(__DIR__.'/tests')
 ;
 
 return PhpCsFixer\Config::create()
@@ -26,7 +26,8 @@ return PhpCsFixer\Config::create()
             'header' => $header,
             'location' => 'after_declare_strict',
             'separate' => 'both'
-        ]
+        ],
+        'declare_strict_types' => true
     ])
     ->setRiskyAllowed(true)
     ->setUsingCache(true)
