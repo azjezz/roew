@@ -43,7 +43,7 @@ abstract class ResultOrExceptionWrapper
      *
      * @throws \LogicException - When the operation succeeded
      */
-    abstract public function getException(): ?\Exception;
+    abstract public function getException(): \Exception;
 
     /**
      * Indicates whether the operation associated with this wrapper existed normally.
