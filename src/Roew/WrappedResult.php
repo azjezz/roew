@@ -57,7 +57,7 @@ final class WrappedResult extends ResultOrExceptionWrapper
      *
      * @throws \LogicException
      */
-    public function getException(): \Exception
+    public function getException(): ?\Exception
     {
         throw new \LogicException('No exception thrown from the operation.');
     }
